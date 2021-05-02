@@ -40,22 +40,23 @@ async def on_member_join(member):
 
 #-------------------------------------------------------------------------------------------------------------------------
 
-    #test image
-    #await welcome_channel.send(file=discord.File('image.png'))
+    print(f'{member} has joined the server')
+    await welcome_channel.send(f'Keri vaada {member.mention}! Welcome to **Gamers Hub**!')
 
+    
 
     #image manipulation
 
     bg = Image.open("bg.png").convert("RGBA")
-    im = Image.open(BytesIO(await member.avatar_url_as(size=256).read())).convert("RGBA")
+    avatar = Image.open(BytesIO(await member.avatar_url_as(size=256).read())).convert("RGBA")
     overlay = Image.new('RGBA', bg.size, (255,255,255,0))
-    masksize = (im.size[0] * 3, im.size[1] * 3)
+    masksize = (avatar.size[0] * 3, avatar.size[1] * 3)
     mask = Image.new('L', masksize, 0)
     draw = ImageDraw.Draw(mask) 
     draw.ellipse((0, 0) + masksize, fill=255)
-    mask = mask.resize(im.size, Image.ANTIALIAS)
-    im.putalpha(mask)
-    overlay.paste(im, (425, 58))
+    mask = mask.resize(avatar.size, Image.ANTIALIAS)
+    avatar.putalpha(mask)
+    overlay.paste(avatar, (422, 61))
     compose = Image.alpha_composite(bg, overlay)
     arr = BytesIO()
     compose.save(arr, format='png')
