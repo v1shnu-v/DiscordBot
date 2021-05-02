@@ -59,13 +59,31 @@ async def on_member_join(member):
     overlay.paste(avatar, (422, 61))
     compose = Image.alpha_composite(bg, overlay)
 #-----------------------------------------------------------------
-    font =ImageFont.truetype("arial.ttf",24)
-
+    font = ImageFont.truetype('arial.ttf', size=38)
     draw = ImageDraw.Draw(compose)
-    text = "Hello World"
+    
 
-    draw.text((200,200), text, (0,0,0), font=font)
-#------------------------------------------------------------------
+    message = f'{member} has joined the server'
+
+    bounding_box = [53, 333, 1048, 420]
+    x1, y1, x2, y2 = bounding_box  # For easy reading
+
+   
+
+    # Calculate the width and height of the text to be drawn, given font size
+    w, h = draw.textsize(message, font=font)
+
+    # Calculate the mid points and offset by the upper left corner of the bounding box
+    x = (x2 - x1 - w)/2 + x1
+    y = (y2 - y1 - h)/2 + y1
+
+    # Write the text to the image, where (x,y) is the top left corner of the text
+    draw.text((x, y), message, align='center', font=font)
+
+    #Draw the bounding box which bounds the text
+    #draw.rectangle([x1, y1, x2, y2])
+
+#------------------------------------------------------------------------------------------    
     arr = BytesIO()
     compose.save(arr, format='png')
     arr.seek(0)
