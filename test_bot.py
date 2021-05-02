@@ -19,6 +19,11 @@ intents.members = True
 client = commands.Bot(command_prefix = '.',intents = intents)
 
 
+def getserver():
+    return client.get_guild(433618651074134028)    #replace number with server id
+
+
+
 
 @client.event
 async def on_ready():
@@ -26,7 +31,7 @@ async def on_ready():
 
 
 
-
+server = client.get_guild(433618651074134028)                           #server id
 
 
 
@@ -35,7 +40,7 @@ async def on_ready():
 async def on_member_join(member):
     
     #IDs
-    server = client.get_guild(433618651074134028)                           #server id
+    server = getserver()  #get serverid
     welcome_channel = member.guild.get_channel(837777546643898399)          #channel id - edit this to the ID of the welcome channel
 
 
@@ -129,12 +134,18 @@ class MyHelp(commands.HelpCommand):
         helpEmbed.set_thumbnail(url="https://media.discordapp.net/attachments/481459137667137541/838439988018151474/unknown.png")
         helpEmbed.add_field(name=".help", value="```Gives a list of all bot commands```", inline=True)
         helpEmbed.add_field(name=".info", value="```Displays bot info```",inline=True)
-        helpEmbed.add_field(name=".command", value="```The next command to be added```",inline=False)
+        helpEmbed.add_field(name=".members", value="```Shows the number of members in the server```",inline=False)
 
 
         await channel.send(embed=helpEmbed)
 
 client.help_command = MyHelp()
+
+@client.command(aliases=['members'])
+async def member_count(ctx):
+    
+    server = getserver()
+    await ctx.send(f'**Gamers Hub** currently has {server.member_count} members')
 
 
 
