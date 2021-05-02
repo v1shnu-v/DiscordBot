@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from PIL import Image, ImageOps, ImageDraw, ImageFilter   #Pillow Library for image manipulations
+from PIL import Image, ImageOps, ImageDraw, ImageFont   #Pillow Library for image manipulations
 from io import BytesIO
 
 token = "ODM3OTYwNDczMzU2Nzk1OTA0.YI0JgQ.vQjqzwJtB-4GNQY38iC6TR9AxRw"
@@ -58,6 +58,14 @@ async def on_member_join(member):
     avatar.putalpha(mask)
     overlay.paste(avatar, (422, 61))
     compose = Image.alpha_composite(bg, overlay)
+#-----------------------------------------------------------------
+    font =ImageFont.truetype("arial.ttf",24)
+
+    draw = ImageDraw.Draw(compose)
+    text = "Hello World"
+
+    draw.text((200,200), text, (0,0,0), font=font)
+#------------------------------------------------------------------
     arr = BytesIO()
     compose.save(arr, format='png')
     arr.seek(0)
