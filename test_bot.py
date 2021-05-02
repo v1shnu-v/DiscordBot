@@ -16,13 +16,17 @@ token = read_token()
 
 intents = discord.Intents.default()
 intents.members = True
-client = commands.Bot(command_prefix = '!',intents = intents)
+client = commands.Bot(command_prefix = '.',intents = intents)
 
 
 
 @client.event
 async def on_ready():
     print("Bot is ready for action")       #Prints "Bot is ready" in the console when it is deployed 
+
+
+
+
 
 
 
@@ -91,8 +95,50 @@ async def on_member_join(member):
     arr.seek(0)
     await welcome_channel.send(file = discord.File(arr, 'profile.png'))
 
+
+
+
+
+#ping command
+
+#@client.command()
+#async def ping(ctx):
+#    await ctx.send(f'Bot latency: {round(client.latency*1000)}ms')
+
+
+#Bot version 
+@client.command(aliases=[''])
+async def info(ctx):
+    verEmbed = discord.Embed(title="", description="", color=0xe3a241)
+    verEmbed.set_author(name="GamersHub Bot")
+    verEmbed.set_thumbnail(url='https://media.discordapp.net/attachments/481459137667137541/838439988018151474/unknown.png')
+    verEmbed.add_field(name="Version", value="```1.0.0```", inline=True)
+    verEmbed.add_field(name="Created using", value="```discord.py```", inline=True)
+    verEmbed.set_footer(text="Bot author : V2#3734")
     
-    
+
+    await ctx.send(embed=verEmbed)
+
+
+#Bot help - A subclass was created here because a default .help command already exists
+class MyHelp(commands.HelpCommand):
+    async def send_bot_help(self, mapping):
+        channel = self.get_destination()
+        helpEmbed = discord.Embed(title="", description = "", color=0xe3a241)
+        helpEmbed.set_author(name="GamersHub Bot")
+        helpEmbed.set_thumbnail(url="https://media.discordapp.net/attachments/481459137667137541/838439988018151474/unknown.png")
+        helpEmbed.add_field(name=".help", value="```Gives a list of all bot commands```", inline=True)
+        helpEmbed.add_field(name=".info", value="```Displays bot info```",inline=True)
+        helpEmbed.add_field(name=".command", value="```The next command to be added```",inline=False)
+
+
+        await channel.send(embed=helpEmbed)
+
+client.help_command = MyHelp()
+
+
+
+
 
 
 
