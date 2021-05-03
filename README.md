@@ -100,8 +100,8 @@ Project Link: [https://github.com/v1shnu-v/DiscordBot-Test](https://github.com/v
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/v1shnu-v/DiscordBot-Test
-[contributors-url]:https://img.shields.io/github/contributors/v1shnu-v/DiscordBot-Test.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/v1shnu-v/DiscordBot-Test?color=Green&style=for-the-badge
+[contributors-url]:https://github.com/v1shnu-v/DiscordBot-Test/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/v1shnu-v/DiscordBot-Test/blob/main/licence.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
