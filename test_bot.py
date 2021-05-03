@@ -29,6 +29,8 @@ def getserver():
 async def on_ready():
     print("Bot is ready for action")       #Prints "Bot is ready" in the console when it is deployed 
 
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='GamersHub Server'))
+
 
 
 server = client.get_guild(433618651074134028)                           #server id
