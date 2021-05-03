@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/v1shnu-v/DiscordBot-Test">
-    <img src="https://github.com/v1shnu-v/DiscordBot-Test/blob/main/Images/logo128.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/v1shnu-v/DiscordBot-Test/blob/main/Images/logo128.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">GamersHub Bot</h3>
