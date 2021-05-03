@@ -55,10 +55,10 @@ This project was made entirely using
 ## Changelog
 
 * Version 1.0.1
-  + Added basic commands like 
-    > .help     - displays a list of commands that the bot can do
-    > .info     - displays bot info
-    > .members  - gives the member count of the server
+  * Added basic commands like 
+    * .help     - displays a list of commands that the bot can do
+    * .info     - displays bot info
+    * .members  - gives the member count of the server
     
 
 * Version 1.0.0
@@ -100,7 +100,7 @@ Project Link: [https://github.com/v1shnu-v/DiscordBot-Test](https://github.com/v
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/v1shnu-v/DiscordBot-Test
 [contributors-url]: https://github.com/v1shnu-v/DiscordBot-Test/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/v1shnu-v/DiscordBot-Test/blob/main/licence.txt
