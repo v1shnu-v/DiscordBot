@@ -102,7 +102,7 @@ Project Link: [https://github.com/v1shnu-v/DiscordBot-Test](https://github.com/v
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/v1shnu-v/DiscordBot-Test
 [contributors-url]:https://img.shields.io/github/contributors/v1shnu-v/DiscordBot-Test?style=flat-square
-[license-shield]: https://img.shields.io/github/license/v1shnu-v/DiscordBot-Test
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/v1shnu-v/DiscordBot-Test/blob/main/licence.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vishnu-vijay-6a9584154/
