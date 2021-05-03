@@ -36,16 +36,16 @@
 This is a custom discord bot that was custom made for my discord server GamersHub.
 
 
-### Built With
+## Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project was made entirely using
 * [Python](https://getbootstrap.com)
 
 
 
 
 <!-- GETTING STARTED -->
-## Libraries Used
+### Libraries Used
 
 * [discord.py](https://discordpy.readthedocs.io/en/stable/)
 * [PIL](https://pypi.org/project/Pillow/)
@@ -64,7 +64,7 @@ This section should list any major frameworks that you built your project using.
 * Version 1.0.0
   + Displays a custom image in the welcome channel of the server with the user's profile picutre and also the number of members in the server
 
-### People who helped
+## People who helped
 These are the people helped. They might have helped in a very small way but without their help this project would not have been possible.
 
 [Zenyaria](https://github.com/Zenyaria)
@@ -72,7 +72,7 @@ These are the people helped. They might have helped in a very small way but with
 
 
 <!-- LICENSE -->
-### License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
