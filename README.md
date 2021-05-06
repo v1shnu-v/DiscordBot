@@ -31,7 +31,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://cdn.discordapp.com/attachments/797841591267754014/839967662540062770/Screenshot.png)
+[![Product Name Screen Shot][product-screenshot]]
 
 This is a custom discord bot that was custom made for my discord server GamersHub.
 
@@ -106,4 +106,4 @@ Project Link: [https://github.com/v1shnu-v/DiscordBot-Test](https://github.com/v
 [license-url]: https://github.com/v1shnu-v/DiscordBot-Test/blob/main/licence.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vishnu-vijay-6a9584154/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://cdn.discordapp.com/attachments/797841591267754014/839967662540062770/Screenshot.png
