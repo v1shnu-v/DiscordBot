@@ -37,7 +37,7 @@
 This project is a custom discord bot that was custom made for my discord server GamersHub. The main function of this bot is to send a welcome message to the welcome channel of the discord server along with an image. The image is manipulated using the PIL python library to crop and paste the profile picture of the new user on top a custom background before sending it to the welcome channel. The bot can also do some basic commands such as finding the number of members in the server
 
 
-!!***Development of this bot is currently under hold due to hosting issues***
+-> ***Development of this bot is currently under hold due to hosting issues*** <-
 
 
 ## Built With
