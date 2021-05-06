@@ -31,7 +31,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://cdn.discordapp.com/attachments/797841591267754014/839967662540062770/Screenshot.png)
 
 This is a custom discord bot that was custom made for my discord server GamersHub.
 
