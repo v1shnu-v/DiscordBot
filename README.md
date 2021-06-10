@@ -1,6 +1,5 @@
 
 [![Contributors][contributors-shield]][contributors-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -69,7 +68,7 @@ This project was made entirely using
   + Displays a custom image in the welcome channel of the server with the user's profile picutre and also the number of members in the server
 
 ## People who helped
-These are the people helped. They might have helped in a very small way but without their help this project would not have been possible.
+These are the people who helped. They might have helped in a very small way but without their help this project would not have been possible.
 
 [Zenyaria](https://github.com/Zenyaria)
 [Soheab](https://github.com/Soheab)
