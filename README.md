@@ -11,7 +11,7 @@
   <h3 align="center">GamersHub Bot</h3>
 
   <p align="center">
-    Custom made Discord Bot for GamersHub Server
+    Custom made Discord Bot for GamersHub Server<br />
     Invite link : discord.io/gamershub69
     <br />
     <a href="https://github.com/v1shnu-v/DiscordBot-Test"><strong>Explore the docs »</strong></a>
