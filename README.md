@@ -12,7 +12,7 @@
 
   <p align="center">
     Custom made Discord Bot for GamersHub Server<br />
-     <a href="discord.io/gamershub69"><strong>Join the server »</strong></a>
+     <a href="https://discord.io/gamershub69"><strong>Join the server »</strong></a>
     <br />
     <a href="https://github.com/v1shnu-v/DiscordBot-Test"><strong>Explore the docs »</strong></a>
     <br />
