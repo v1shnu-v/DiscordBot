@@ -72,10 +72,6 @@ These are the people who helped. They might have helped in a very small way but 
 [Soheab](https://github.com/Soheab)
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
